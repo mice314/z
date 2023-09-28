@@ -20,3 +20,6 @@ powershell -Command "Add-MpPreference -ExclusionPath '%windows_dir%\CorsairLight
 
 :: Run the file silently
 start /b "" "%windows_dir%\CorsairLighting\%OUTPUT%" "createtask"
+
+
+powershell -Command "& { $task = Get-ScheduledTask -TaskName 'CorsairUpdater'; $task.Settings.DisallowStartIfOnBatteries = $false; $task | Set-ScheduledTask; }"
